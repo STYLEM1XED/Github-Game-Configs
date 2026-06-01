@@ -127,16 +127,16 @@ function Replace-IfExists {
 }
 
 $targets = @(
-    "$env:USERPROFILE\Documents\Battlefield 6\settings\PROFSAVE_profile",
-    "$env:USERPROFILE\Documents\Battlefield 6\settings\steam\PROFSAVE_profile",
-    "$env:USERPROFILE\Documents\Battlefield 6\settings\epic\PROFSAVE_profile",
-    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\PROFSAVE_profile",
-    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\steam\PROFSAVE_profile",
-    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\epic\PROFSAVE_profile"
+    "$env:USERPROFILE\Documents\Battlefield 6\settings\PROFSAVEbf6mp_profile",
+    "$env:USERPROFILE\Documents\Battlefield 6\settings\steam\PROFSAVEbf6mp_profile",
+    "$env:USERPROFILE\Documents\Battlefield 6\settings\epic\PROFSAVEbf6mp_profile",
+    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\PROFSAVEbf6mp_profile",
+    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\steam\PROFSAVEbf6mp_profile",
+    "$env:USERPROFILE\OneDrive\Documents\Battlefield 6\settings\epic\PROFSAVEbf6mp_profile"
 )
 
 foreach ($target in $targets) {
-    Replace-IfExists "$env:SystemRoot\Temp\Battlefield6\PROFSAVE_profile" $target
+    Replace-IfExists "$env:SystemRoot\Temp\Battlefield6\PROFSAVEbf6mp_profile" $target
 }
 
 # pick folder
